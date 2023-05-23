@@ -15,7 +15,7 @@ qrObj.add_data(data)
 qrObj.make(fit=True)
 
 # Create Image for the code
-if len(data) == 0 & len(img_name):
+if len(data) == 0 or len(img_name):
     print("Empty strings are not allowed")
 else:
     image = qrObj.make_image(fill_color="black", back_color="white")
