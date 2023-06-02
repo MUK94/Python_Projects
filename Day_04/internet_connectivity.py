@@ -1,16 +1,15 @@
 import socket
 
-def check_internet_connection():
+def check_conn(url):
     try:
-        # Attempt to connect to a reliable remote server
-        socket.create_connection(("www.africaphageforum.com", 80))
+        socket.create_connection((url, 80))
         return True
     except OSError:
         pass
     return False
 
-# Check internet connectivity
-if check_internet_connection():
+check_conn_site = check_conn("https://africaphageforum.org/")
+if check_conn_site:
     print("Internet connection is available.")
 else:
     print("Internet connection is not available.")
