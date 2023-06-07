@@ -1,6 +1,6 @@
 # Initialize a new list to store unique values
 # loop through original list, if element present in list of uniq values, pass
-# else, append that element to the new list 
+# else, append that element to the unique list 
 
 def remove_duplicates(myList):
     unique_list = []
