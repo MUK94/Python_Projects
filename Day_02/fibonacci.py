@@ -11,5 +11,6 @@ def fibo(number):
         num2 = temp + num1
     return series
 
-print(fibo(10))
+num = int(input("Enter a Number: "))
+print(fibo(num))
     
