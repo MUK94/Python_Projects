@@ -1,6 +1,6 @@
 import re
 
-Without Regular Expressions (For example 415-555-4242)
+# Without Regular Expressions (For example 415-555-4242)
 def isPhoneNumber(text):
     if len(text) != 12:
         return False
